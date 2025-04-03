@@ -98,3 +98,15 @@ def main():
         plot_feature_distribution(data)
 if __name__ == "__main__":
     main()
+st.set_page_config(page_title="My App", page_icon="🎵", layout="wide")
+
+# Hide Streamlit's default menu and footer
+hide_menu = """
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
+
